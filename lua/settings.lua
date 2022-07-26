@@ -21,7 +21,7 @@ require('plugins')
 require('tree-config')
 require('keymaps')
 require('barbar-config')
-
+require('tree-sitter')
 --plugins
 vim.notify = require('notify')
 
