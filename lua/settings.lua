@@ -15,7 +15,7 @@ set.termguicolors = true
 
 set.relativenumber = true
 set.cursorline = true
-
+set.guifont={ "DroidSansMono NF", "h12" }
 -- end_setting
 require('plugins')
 require('tree-config')
