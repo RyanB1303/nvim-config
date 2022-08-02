@@ -27,4 +27,5 @@ vim.notify = require('notify')
 
 --themes
 --vim.cmd[[colorscheme nord]]
-require('onenord').setup()
+--require('onenord').setup()
+require('github-theme').setup()
