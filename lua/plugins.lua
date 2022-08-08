@@ -21,5 +21,7 @@ return require('packer').startup(function()
   }
   use {'romgrk/barbar.nvim'}
   use {'shaunsingh/nord.nvim'}
-  use { 'projekt0n/github-nvim-theme' }
+  use {'projekt0n/github-nvim-theme'}
+  use {'xiyaowong/nvim-transparent'}
+  use {'neoclide/coc.nvim', branch = 'release'}
 end)

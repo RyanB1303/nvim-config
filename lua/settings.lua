@@ -13,7 +13,8 @@ set.scrolloff = 5
 set.fileencoding = 'utf-8'
 set.termguicolors = true
 
-set.relativenumber = true
+set.number = true
+set.relativenumber = false
 set.cursorline = true
 set.guifont={ "DroidSansMono NF", "h12" }
 -- end_setting
@@ -22,6 +23,7 @@ require('tree-config')
 require('keymaps')
 require('barbar-config')
 require('tree-sitter')
+require('lualine-config')
 --plugins
 vim.notify = require('notify')
 
@@ -29,3 +31,4 @@ vim.notify = require('notify')
 --vim.cmd[[colorscheme nord]]
 --require('onenord').setup()
 require('github-theme').setup()
+require('transparent-config')
