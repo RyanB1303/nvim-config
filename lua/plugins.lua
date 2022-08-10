@@ -24,4 +24,5 @@ return require('packer').startup(function()
   use {'projekt0n/github-nvim-theme'}
   use {'xiyaowong/nvim-transparent'}
   use {'neoclide/coc.nvim', branch = 'release'}
+  use {'tpope/vim-endwise'}
 end)
