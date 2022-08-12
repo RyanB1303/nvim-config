@@ -1,0 +1,22 @@
+{
+  "diagnostic-languageserver.filetypes": {
+    "markdown": [ "write-good", "markdownlint" ],
+    "sh": "shellcheck",
+    "ruby": "solargraph"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "python": ["black", "isort"],
+    "lua": "lua-format",
+    "sh": "shfmt",
+    "blade": "blade-formatter",
+    "cmake": "cmake-format",
+    "ruby": "solargraph"
+  },
+  "coc.preferences.formatOnSaveFiletypes": [
+    "ruby"
+  ],
+  "diagnostic.enable": true,
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": true
+}
+

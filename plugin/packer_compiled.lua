@@ -143,6 +143,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-endwise",
     url = "https://github.com/tpope/vim-endwise"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-merginal"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-merginal",
+    url = "https://github.com/idanarye/vim-merginal"
   }
 }
 

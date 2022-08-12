@@ -25,4 +25,6 @@ return require('packer').startup(function()
   use {'xiyaowong/nvim-transparent'}
   use {'neoclide/coc.nvim', branch = 'release'}
   use {'tpope/vim-endwise'}
+  use {'tpope/vim-fugitive'}
+  use {'idanarye/vim-merginal'}
 end)
