@@ -19,25 +19,10 @@ require('lualine').setup {
   },
    sections = {
     lualine_a = {'mode'},
-    lualine_b = {{'FugitiveHead', icon = ''}, 'diff',},
+    lualine_b = {'branch', 'diff',},
     lualine_c = {'filename'},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
-    lualine_y = {
-      {'buffers', 
-        buffers_color = {
-          active = 'lualine_{section}_normal',
-        },
-        filetype_names = {
-          packer = 'Packer',
-        },
-        mode = 1,
-        symbols = {
-          modified = ' ●',      -- Text to show when the buffer is modified
-          alternate_file = '#', -- Text to show to identify the alternate file
-          directory =  '',     -- Text to show when the buffer is a directory
-        },
-      }
-    },
+    lualine_y = {{'buffers', mode = 1}},
     lualine_z = {}
   },
   inactive_sections = {
@@ -51,5 +36,5 @@ require('lualine').setup {
   tabline = {},
   winbar = {},
   inactive_winbar = {},
-  extensions = {'fugitive'}
+  extensions = {}
 }

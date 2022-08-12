@@ -17,3 +17,6 @@ map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 map('n', '<A-w>', '<Cmd>BufferClose<CR>', opts)
 map('n', '<A-S-w>', '<Cmd>BufferCloseAllButCurrentOrPinned<CR>', opts)
 map('n', '<leader>b', ':buffer<CR>', opts) -- opening last buffer
+
+--coc nvim
+vim.cmd('source  ~/.config/nvim/keys.vim')
