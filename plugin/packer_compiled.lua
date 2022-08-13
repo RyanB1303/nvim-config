@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
@@ -134,10 +139,25 @@ _G.packer_plugins = {
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope-coc.nvim"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/telescope-coc.nvim",
+    url = "https://github.com/fannheyward/telescope-coc.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-autoformat-rails"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-autoformat-rails",
+    url = "https://github.com/KurtPreston/vim-autoformat-rails"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
   },
   ["vim-endwise"] = {
     loaded = true,
@@ -153,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-merginal",
     url = "https://github.com/idanarye/vim-merginal"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

@@ -14,17 +14,20 @@ require("nvim-tree").setup({
   view = {
     adaptive_size = false,
     centralize_selection = true,
-    side = "right",
+    side = "left",
+    relativenumber = true,
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
       },
     },
+    width = 50
   },
   renderer = {
     group_empty = true,
     highlight_git = true,
     full_name = false,
+    highlight_opened_files = "all",
     indent_markers = {
       enable = true,
       inline_arrows = true,
@@ -33,11 +36,23 @@ require("nvim-tree").setup({
         edge = "│",
         item = "│",
         none = " ",
-      },
+      }, 
     }
   },
   filters = {
     dotfiles = false,
-    custom = { "^.git$" }
+    custom = { "^.git$", "^.vscode$" }
   },
+  update_focused_file = {
+    enable = true
+  },
+  hijack_cursor = true,
+  disable_netrw = true,
+  hijack_directories = {
+    enable = false,
+    auto_open = false
+  },
+  git = {
+    enable = false
+  }
 })

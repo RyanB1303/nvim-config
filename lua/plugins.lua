@@ -14,7 +14,10 @@ return require('packer').startup(function()
   }
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { {'nvim-lua/plenary.nvim'},
+    --plugins
+    {'fannheyward/telescope-coc.nvim'}
+    }
   }
   use { 'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true }
@@ -26,5 +29,9 @@ return require('packer').startup(function()
   use {'neoclide/coc.nvim', branch = 'release'}
   use {'tpope/vim-endwise'}
   use {'tpope/vim-fugitive'}
-  use {'idanarye/vim-merginal'}
+  use {'tpope/vim-commentary'}
+  use {'tpope/vim-surround'}
+  use {'KurtPreston/vim-autoformat-rails'}
+  use {'idanarye/vim-merginal'} 
+  use {'mattn/emmet-vim'}
 end)
