@@ -26,7 +26,7 @@ require('tree-sitter')
 require('lualine-config')
 --plugins
 vim.notify = require('notify')
-
+vim.g['loaded_perl_provider'] = 0
 --themes
 --vim.cmd[[colorscheme nord]]
 --require('onenord').setup()
