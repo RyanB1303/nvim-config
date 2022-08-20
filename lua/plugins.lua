@@ -34,4 +34,6 @@ return require('packer').startup(function()
   use {'KurtPreston/vim-autoformat-rails'}
   use {'idanarye/vim-merginal'} 
   use {'mattn/emmet-vim'}
+  use {'arkav/lualine-lsp-progress'}
+  use {'simrat39/symbols-outline.nvim'}
 end)
