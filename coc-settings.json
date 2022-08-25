@@ -11,6 +11,7 @@
   ],
   "diagnostic.enable": true,
   "solargraph.diagnostics": true,
-  "solargraph.formatting": true
+  "solargraph.formatting": true,
+  "solargraph.transport": "stdio"
 }
 

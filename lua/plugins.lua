@@ -35,5 +35,5 @@ return require('packer').startup(function()
   use {'idanarye/vim-merginal'} 
   use {'mattn/emmet-vim'}
   use {'arkav/lualine-lsp-progress'}
-  use {'simrat39/symbols-outline.nvim'}
+  use {'folke/which-key.nvim'}
 end)
