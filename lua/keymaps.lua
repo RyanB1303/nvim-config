@@ -1,6 +1,5 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-local telescoper = require'telescope.builtin'
 vim.g.mapleader = ','
 
 map('n', '<c-b>b', ':NvimTreeToggle<CR>', opts)
@@ -14,13 +13,12 @@ map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 map('n', '<A-w>', '<Cmd>BufferClose<CR>', opts)
 map('n', '<A-S-w>', '<Cmd>BufferCloseAllButCurrentOrPinned<CR>', opts)
-map('n', '<leader>b', ':buffer<CR>', opts) -- opening last buffer
 
 --telescope
 map('n', '<leader>b', ':Telescope buffers<CR>', opts)
 map('n', '<c-p>', ':Telescope find_files<CR>', opts)
 map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
-map('n', '<leader>o', ':Telescope coc document_symbols<CR>', opts)
-map('n', '<leader>of', ':Telescope coc definitions<CR>', opts)
+-- map('n', '<leader>o', ':Telescope coc document_symbols<CR>', opts)
+-- map('n', '<leader>of', ':Telescope coc definitions<CR>', opts)
 --coc nvim
-vim.cmd('source  ~/.config/nvim/keys.vim')
+-- vim.cmd('source  ~/.config/nvim/keys.vim')
