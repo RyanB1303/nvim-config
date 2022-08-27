@@ -31,9 +31,16 @@ return require('packer').startup(function()
   use {'tpope/vim-fugitive'}
   use {'tpope/vim-commentary'}
   use {'tpope/vim-surround'}
+  use {'jiangmiao/auto-pairs'}
   use {'KurtPreston/vim-autoformat-rails'}
   use {'idanarye/vim-merginal'} 
   use {'mattn/emmet-vim'}
   use {'arkav/lualine-lsp-progress'}
   use {'folke/which-key.nvim'}
+  use {
+    "klen/nvim-test",
+    config = function()
+      require('nvim-test').setup()
+    end
+  }
 end)

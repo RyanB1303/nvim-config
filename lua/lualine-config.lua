@@ -36,7 +36,7 @@ local config = {
    sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
-    lualine_c = {{'filename', file_status = true, path=1, shooting_target = 50}},
+    lualine_c = {{'filename', file_status = true, path=1, shooting_target = 50}, ins_right},
     lualine_x = {'filetype'},
     lualine_y = {'location'},
     lualine_z = {}
@@ -44,7 +44,7 @@ local config = {
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {{'filename', file_status=true, path=3}},
+    lualine_c = {{'filename', file_status=true, path=2}},
     lualine_x = {'location'},
     lualine_y = {},
     lualine_z = {}

@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -108,6 +113,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-test"] = {
+    config = { "\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-test\frequire\0" },
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/nvim-test",
+    url = "https://github.com/klen/nvim-test"
   },
   ["nvim-transparent"] = {
     loaded = true,
@@ -192,6 +203,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-test
+time([[Config for nvim-test]], true)
+try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-test\frequire\0", "config", "nvim-test")
+time([[Config for nvim-test]], false)
 if should_profile then save_profiles() end
 
 end)

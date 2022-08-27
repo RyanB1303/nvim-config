@@ -4,7 +4,7 @@ require'bufferline'.setup {
   animation = true,
 
   -- Enable/disable auto-hiding the tab bar when there is a single buffer
-  auto_hide = true,
+  auto_hide = false,
 
   -- Enable/disable current/total tabpages indicator (top right corner)
   tabpages = true,
@@ -40,7 +40,7 @@ require'bufferline'.setup {
 
   -- If true, new buffers will be inserted at the start/end of the list.
   -- Default is to insert after current buffer.
-  insert_at_end = false,
+  insert_at_end = true,
   insert_at_start = false,
 
   -- Sets the maximum padding width with which to surround each tab
@@ -53,7 +53,7 @@ require'bufferline'.setup {
   -- assigned based on their name. Otherwise or in case all letters are
   -- already assigned, the behavior is to assign letters in order of
   -- usability (see order below)
-  semantic_letters = true,
+  semantic_letters = false,
 
   -- New buffer letters are assigned in this order. This order is
   -- optimal for the qwerty keyboard layout but might need adjustement
