@@ -4,7 +4,8 @@
   },
   "diagnostic-languageserver.formatFiletypes": {
     "lua": "lua-format",
-    "ruby": "solargraph"
+    "ruby": "solargraph",
+    "js": "javascript"
   },
   "coc.preferences.formatOnSaveFiletypes": [
     "ruby"
