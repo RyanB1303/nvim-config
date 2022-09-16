@@ -45,6 +45,8 @@ wk.register({
   ["<leader>o"] = { "<cmd>Telescope coc document_symbols<cr>", "Symbol list"},
   ["<leader>of"] = { "<cmd>Telescope coc definitions<cr>", "Definition List"},
   ["<leader>,"] = { "<cmd>w<cr>", "Save file"},
+  ["<a-s-,>"] = { "<cmd>BufferMovePrevious<cr>", "buffer move previous alt"},
+  ["<a-s-.>"] = { "<cmd>BufferMoveNext<cr>", "buffer move next alt"},
   ["<a-1>"] = { "<cmd>BufferPrevious<cr>", "buffer previous alt"},
   ["<a-3>"] = { "<cmd>BufferNext<cr>", "buffer next alt"},
   ["<a-b>"] = { "<cmd>BufferPick<cr>", "buffer pick mode"},
