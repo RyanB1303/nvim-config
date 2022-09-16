@@ -190,6 +190,11 @@ _G.packer_plugins = {
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-merginal",
     url = "https://github.com/idanarye/vim-merginal"
   },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-surround",

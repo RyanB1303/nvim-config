@@ -38,7 +38,9 @@ map('n', '<leader>l', ':SymbolsOutline<CR>', opts)
 
 wk.register({
   ["<leader>b"] = { "<cmd>Telescope buffers<cr>", "Buffer List"},
+  ["<leader>p"] = { "<cmd>Format<cr>", "Format Code"},
   ["<leader>fg"] = { "<cmd>Telescope live_grep<cr>", "Live grep all file"},
+  ["<leader>g"] = { "<cmd>0G<cr>", "Fugitive New buffer"},
   ["<leader>l"] = { "<cmd>SymbolsOutline<cr>", "Toggle SymbolsOutline"},
   ["<leader>o"] = { "<cmd>Telescope coc document_symbols<cr>", "Symbol list"},
   ["<leader>of"] = { "<cmd>Telescope coc definitions<cr>", "Definition List"},
@@ -51,4 +53,5 @@ wk.register({
   ["<s-t>"] = {"<cmd>TestLast<cr>", "run last test"},
   ["<c-w>a"] = {"<cmd>wincmd h<cr>", "alt switch right pane"},
   ["<c-w>d"] = {"<cmd>wincmd l<cr>", "alt switch left pane"},
+  ["<c-b>g"] = { "<cmd>MerginalToggle<cr>", "Toggle merginal"},
 }, opts)

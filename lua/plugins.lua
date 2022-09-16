@@ -43,4 +43,5 @@ return require('packer').startup(function()
       require('nvim-test').setup()
     end
   }
+  use {'sheerun/vim-polyglot'}
 end)
