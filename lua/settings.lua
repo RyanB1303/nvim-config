@@ -27,6 +27,7 @@ require('lualine-config')
 --plugins
 vim.notify = require('notify')
 vim.g['loaded_perl_provider'] = 0
+vim.g['test#strategy'] = 'tslime'
 --themes
 --vim.cmd[[colorscheme nord]]
 --require('onenord').setup()
@@ -35,4 +36,4 @@ require('transparent-config')
 require('telescope-config')
 require('neovide-config')
 require('vim-notify')
-require('nvim-test-config')
+-- require('nvim-test-config')
