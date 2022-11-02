@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nord.nvim"] = {
-    loaded = true,
-    path = "/home/ry/.local/share/nvim/site/pack/packer/start/nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
-  },
   ["nvim-notify"] = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/nvim-notify",
@@ -129,11 +124,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
-  ["onenord.nvim"] = {
-    loaded = true,
-    path = "/home/ry/.local/share/nvim/site/pack/packer/start/onenord.nvim",
-    url = "https://github.com/rmehri01/onenord.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -184,6 +174,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   },
   ["which-key.nvim"] = {
     loaded = true,
