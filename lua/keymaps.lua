@@ -31,8 +31,8 @@ map('n', '<c-p>', ':Telescope find_files<CR>', opts)
 -- map('n', '<leader>o', ':Telescope coc document_symbols<CR>', opts)
 -- map('n', '<leader>of', ':Telescope coc definitions<CR>', opts)
 --coc nvim
-vim.cmd('source  ~/.config/nvim/keys.vim')
-
+-- vim.cmd('source  ~/.config/nvim/keys.vim')
+require('coc-keys')
 --symbols-outline
 map('n', '<leader>l', ':SymbolsOutline<CR>', opts)
 

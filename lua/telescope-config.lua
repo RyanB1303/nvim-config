@@ -1,4 +1,5 @@
 require('telescope').setup({
+  defaults = { file_ignore_patterns = { "node_modules", ".elixir_ls", "_build", "deps"} },
   extensions = {
     coc = {
       prefer_locations = true

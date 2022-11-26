@@ -41,7 +41,7 @@ require("nvim-tree").setup({
   },
   filters = {
     dotfiles = false,
-    custom = { "^.git$", "^.vscode$", "node_modules", "tmp" }
+    custom = { "^.git$", "^.vscode$", "node_modules", "tmp", "_build", "deps", ".elixir_ls" }
   },
   update_focused_file = {
     enable = true

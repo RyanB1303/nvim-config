@@ -36,4 +36,5 @@ return require('packer').startup(function()
   use {'sheerun/vim-polyglot'}
   use {'janko/vim-test'}
   use {'jgdavey/tslime.vim'}
+  use {'dense-analysis/ale'}
 end)

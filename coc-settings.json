@@ -17,6 +17,7 @@
   "diagnostic.enable": true,
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
-  "intelephense.licenceKey": "00RHJ8DSNYWJNR8"
+  "intelephense.licenceKey": "00RHJ8DSNYWJNR8",
+  "elixir.pathToElixirLS": "C:/Users/ry/.elixir-ls/release/language_server.bat"
 }
 
