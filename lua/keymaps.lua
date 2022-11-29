@@ -55,5 +55,5 @@ wk.register({
   ["<s-t>"] = {"<cmd>TestLast<cr>", "run last test"},
   ["<c-w>a"] = {"<cmd>wincmd h<cr>", "alt switch right pane"},
   ["<c-w>d"] = {"<cmd>wincmd l<cr>", "alt switch left pane"},
-  ["<c-b>g"] = { "<cmd>MerginalToggle<cr>", "Toggle merginal"},
+  ["<c-b>g"] = {"<cmd>MerginalToggle<cr>", "Toggle merginal"}
 }, opts)

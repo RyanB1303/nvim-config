@@ -31,12 +31,8 @@ return require('packer').startup(function()
   use {'tpope/vim-surround'}
   use {'idanarye/vim-merginal'}
   use {'folke/which-key.nvim'}
-  use {
-    "klen/nvim-test",
-    config = function()
-      require('nvim-test').setup()
-    end
-  }
   use {'sheerun/vim-polyglot'}
   use 'wakatime/vim-wakatime'
+  use {'janko/vim-test'}
+  use {'jgdavey/tslime.vim'}
 end)
