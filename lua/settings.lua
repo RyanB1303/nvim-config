@@ -28,6 +28,7 @@ require('lualine-config')
 vim.notify = require('notify')
 vim.g['loaded_perl_provider'] = 0
 vim.g['test#strategy'] = 'tslime'
+vim.g.ale_fixers = { elixir = 'mix_format'}
 --themes
 --vim.cmd[[colorscheme nord]]
 --require('onenord').setup()

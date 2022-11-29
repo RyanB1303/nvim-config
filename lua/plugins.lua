@@ -35,4 +35,5 @@ return require('packer').startup(function()
   use 'wakatime/vim-wakatime'
   use {'janko/vim-test'}
   use {'jgdavey/tslime.vim'}
+  use {'dense-analysis/ale'}
 end)
