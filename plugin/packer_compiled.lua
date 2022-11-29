@@ -174,15 +174,15 @@ _G.packer_plugins = {
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
-  ["vim-wakatime"] = {
-    loaded = true,
-    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-wakatime",
-    url = "https://github.com/wakatime/vim-wakatime"
-  },
   ["vim-test"] = {
     loaded = true,
     path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/janko/vim-test"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/ry/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   },
   ["which-key.nvim"] = {
     loaded = true,
