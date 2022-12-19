@@ -1,4 +1,12 @@
 {
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"]
+    }
+  },
+  "codeLens.enable": true,
   "diagnostic-languageserver.filetypes": {
     "lua": "lua",
     "ruby": "solargraph",
@@ -17,6 +25,7 @@
   "diagnostic.enable": true,
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
-  "intelephense.licenceKey": "00RHJ8DSNYWJNR8"
+  "intelephense.licenceKey": "00RHJ8DSNYWJNR8",
+  "Lua.telemetry.enable": true
 }
 

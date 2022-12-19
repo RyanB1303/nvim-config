@@ -16,7 +16,7 @@ set.termguicolors = true
 set.number = true
 set.relativenumber = false
 set.cursorline = true
-set.guifont={ "DroidSansMono NF", ":h12" }
+set.guifont={ "MesloLGS NF", ":h12" }
 -- end_setting
 require('plugins')
 require('tree-config')
@@ -30,9 +30,11 @@ vim.g['loaded_perl_provider'] = 0
 vim.g['test#strategy'] = 'tslime'
 vim.g.ale_fixers = { elixir = 'mix_format'}
 --themes
---vim.cmd[[colorscheme nord]]
+set.background= 'dark'
+vim.g.gruvbox_material_better_performance = 1
+vim.cmd[[colorscheme gruvbox-material]]
 --require('onenord').setup()
-require('github-theme').setup()
+-- require('github-theme').setup()
 require('transparent-config')
 require('telescope-config')
 require('neovide-config')

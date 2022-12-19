@@ -29,6 +29,7 @@ return require('packer').startup(function()
   use {'tpope/vim-fugitive'}
   use {'tpope/vim-commentary'}
   use {'tpope/vim-surround'}
+  use {'tpope/vim-haml'}
   use {'idanarye/vim-merginal'}
   use {'folke/which-key.nvim'}
   use {'sheerun/vim-polyglot'}
@@ -36,4 +37,5 @@ return require('packer').startup(function()
   use {'janko/vim-test'}
   use {'jgdavey/tslime.vim'}
   use {'dense-analysis/ale'}
+  use {'sainnhe/gruvbox-material'}
 end)
