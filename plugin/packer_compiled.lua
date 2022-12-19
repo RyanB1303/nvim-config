@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["conflict-marker.vim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/conflict-marker.vim",
+    url = "https://github.com/rhysd/conflict-marker.vim"
+  },
   ["github-nvim-theme"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/github-nvim-theme",

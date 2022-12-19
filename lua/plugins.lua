@@ -38,4 +38,5 @@ return require('packer').startup(function()
   use {'jgdavey/tslime.vim'}
   use {'dense-analysis/ale'}
   use {'sainnhe/gruvbox-material'}
+  use {'rhysd/conflict-marker.vim'}
 end)
