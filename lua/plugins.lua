@@ -2,9 +2,6 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'rcarriga/nvim-notify'
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'neovim/nvim-lspconfig'
   -- Post-install/update hook with neovim command
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -12,35 +9,53 @@ return require('packer').startup(function()
   }
   use {
     'kyazdani42/nvim-tree.lua',
-    requires = {'kyazdani42/nvim-web-devicons'}
+    requires = { 'kyazdani42/nvim-web-devicons' }
   }
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'},
-    --plugins
-    -- {'fannheyward/telescope-coc.nvim'}
+    requires = { { 'nvim-lua/plenary.nvim' },
+      --plugins
+      -- {'fannheyward/telescope-coc.nvim'}
     }
   }
   use { 'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use {'romgrk/barbar.nvim'}
-  use {'projekt0n/github-nvim-theme'}
-  -- use {'xiyaowong/nvim-transparent'}
-  -- use {'neoclide/coc.nvim', branch = 'release'}
-  use {'tpope/vim-endwise'}
-  use {'tpope/vim-fugitive'}
-  use {'tpope/vim-commentary'}
-  use {'tpope/vim-surround'}
-  use {'tpope/vim-haml'}
-  use {'idanarye/vim-merginal'}
-  use {'folke/which-key.nvim'}
-  use {'sheerun/vim-polyglot'}
-  use 'wakatime/vim-wakatime'
-  use {'janko/vim-test'}
-  use {'jgdavey/tslime.vim'}
-  -- use {'dense-analysis/ale'}
-  use {'sainnhe/gruvbox-material'}
-  use {'rhysd/conflict-marker.vim'}
-  -- use({ "mhanberg/elixir.nvim", requires = { "nvim-lua/plenary.nvim" }})
+  use { 'romgrk/barbar.nvim' }
+  use { 'projekt0n/github-nvim-theme' }
+  use { 'tpope/vim-endwise' }
+  use { 'tpope/vim-fugitive' }
+  use { 'tpope/vim-commentary' }
+  use { 'tpope/vim-surround' }
+  use { 'tpope/vim-haml' }
+  use { 'idanarye/vim-merginal' }
+  use { 'folke/which-key.nvim' }
+  use { 'sheerun/vim-polyglot' }
+  use { 'wakatime/vim-wakatime' }
+  use { 'janko/vim-test' }
+  use { 'jgdavey/tslime.vim' }
+  use { 'sainnhe/gruvbox-material' }
+  use { 'rhysd/conflict-marker.vim' }
+  use { 'theprimeagen/harpoon' }
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    requires = {
+      -- LSP Support
+      { 'neovim/nvim-lspconfig' },
+      { 'williamboman/mason.nvim' },
+      { 'williamboman/mason-lspconfig.nvim' },
+
+      -- Autocompletion
+      { 'hrsh7th/nvim-cmp' },
+      { 'hrsh7th/cmp-buffer' },
+      { 'hrsh7th/cmp-path' },
+      { 'saadparwaiz1/cmp_luasnip' },
+      { 'hrsh7th/cmp-nvim-lsp' },
+      { 'hrsh7th/cmp-nvim-lua' },
+
+      -- Snippets
+      { 'L3MON4D3/LuaSnip' },
+      { 'rafamadriz/friendly-snippets' },
+    }
+  }
 end)
