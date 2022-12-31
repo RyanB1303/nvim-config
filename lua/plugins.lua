@@ -39,4 +39,5 @@ return require('packer').startup(function()
   use {'dense-analysis/ale'}
   use {'sainnhe/gruvbox-material'}
   use {'rhysd/conflict-marker.vim'}
+  use({ "mhanberg/elixir.nvim", requires = { "nvim-lua/plenary.nvim" }})
 end)

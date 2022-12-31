@@ -4,9 +4,9 @@ local set = vim.opt
 set.syntax = on
 set.expandtab = true
 set.shiftwidth = 2
-set.softtabstop = 2
+set.softtabstop = 4
 set.smarttab = true
-set.tabstop = 2
+set.tabstop = 4
 
 set.wrap = false
 set.scrolloff = 5
@@ -39,4 +39,5 @@ require('transparent-config')
 require('telescope-config')
 require('neovide-config')
 require('vim-notify')
+require('elixir-config')
 -- require('nvim-test-config')

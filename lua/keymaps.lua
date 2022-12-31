@@ -48,11 +48,10 @@ wk.register({
   ["<leader>,"] = { "<cmd>w<cr>", "Save file"},
   ["<a-<>"] = { "<cmd>BufferMovePrevious<cr>", "buffer move previous alt"},
   ["<a->>"] = { "<cmd>BufferMoveNext<cr>", "buffer move next alt"},
-  ["<a-1>"] = { "<cmd>BufferPrevious<cr>", "buffer previous alt"},
-  ["<a-3>"] = { "<cmd>BufferNext<cr>", "buffer next alt"},
+  ["<s-t>"] = { "<cmd>BufferPrevious<cr>", "buffer previous alt"},
+  ["t"] = { "<cmd>BufferNext<cr>", "buffer next alt"},
   ["<a-b>"] = { "<cmd>BufferPick<cr>", "buffer pick mode"},
   ["<a-s-w>"] = { "<cmd>BufferCloseAllButCurrentOrPinned<cr>", "buffer close all"},
-  ["<s-t>"] = {"<cmd>TestLast<cr>", "run last test"},
   ["<c-w>a"] = {"<cmd>wincmd h<cr>", "alt switch right pane"},
   ["<c-w>d"] = {"<cmd>wincmd l<cr>", "alt switch left pane"},
   ["<c-b>g"] = {"<cmd>MerginalToggle<cr>", "Toggle merginal"}
