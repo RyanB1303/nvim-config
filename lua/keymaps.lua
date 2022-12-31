@@ -32,19 +32,47 @@ map('n', '<c-p>', ':Telescope find_files<CR>', opts)
 -- map('n', '<leader>of', ':Telescope coc definitions<CR>', opts)
 --coc nvim
 -- vim.cmd('source  ~/.config/nvim/keys.vim')
-require('coc-keys')
+-- require('coc-keys')
 
 --symbols-outline
 map('n', '<leader>l', ':SymbolsOutline<CR>', opts)
 
+-- lsp
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
+local on_attach = function(client, bufnr)
+-- Enable completion triggered by <c-x><c-o>
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+  -- Mappings.
+  -- See `:help vim.lsp.*` for documentation on any of the below functions
+  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
+  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
+  vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
+  vim.keymap.set('n', '<space>wl', function()
+    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+  end, bufopts)
+  vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
+  vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
+  vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+  vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
+end
+
+-- whichkeys
 wk.register({
   ["<leader>b"] = { "<cmd>Telescope buffers<cr>", "Buffer List"},
   ["<leader>p"] = { "<cmd>Format<cr>", "Format Code"},
   ["<leader>fg"] = { "<cmd>Telescope live_grep<cr>", "Live grep all file"},
   ["<leader>g"] = { "<cmd>0G<cr>", "Fugitive New buffer"},
   ["<leader>l"] = { "<cmd>SymbolsOutline<cr>", "Toggle SymbolsOutline"},
-  ["<leader>o"] = { "<cmd>Telescope coc document_symbols<cr>", "Symbol list"},
-  ["<leader>of"] = { "<cmd>Telescope coc definitions<cr>", "Definition List"},
   ["<leader>,"] = { "<cmd>w<cr>", "Save file"},
   ["<a-<>"] = { "<cmd>BufferMovePrevious<cr>", "buffer move previous alt"},
   ["<a->>"] = { "<cmd>BufferMoveNext<cr>", "buffer move next alt"},
@@ -54,5 +82,5 @@ wk.register({
   ["<a-s-w>"] = { "<cmd>BufferCloseAllButCurrentOrPinned<cr>", "buffer close all"},
   ["<c-w>a"] = {"<cmd>wincmd h<cr>", "alt switch right pane"},
   ["<c-w>d"] = {"<cmd>wincmd l<cr>", "alt switch left pane"},
-  ["<c-b>g"] = {"<cmd>MerginalToggle<cr>", "Toggle merginal"}
+  ["<c-b>g"] = {"<cmd>MerginalToggle<cr>", "Toggle merginal"},
 }, opts)

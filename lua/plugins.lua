@@ -2,6 +2,9 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'rcarriga/nvim-notify'
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'neovim/nvim-lspconfig'
   -- Post-install/update hook with neovim command
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -15,7 +18,7 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'},
     --plugins
-    {'fannheyward/telescope-coc.nvim'}
+    -- {'fannheyward/telescope-coc.nvim'}
     }
   }
   use { 'nvim-lualine/lualine.nvim',
@@ -23,8 +26,8 @@ return require('packer').startup(function()
   }
   use {'romgrk/barbar.nvim'}
   use {'projekt0n/github-nvim-theme'}
-  use {'xiyaowong/nvim-transparent'}
-  use {'neoclide/coc.nvim', branch = 'release'}
+  -- use {'xiyaowong/nvim-transparent'}
+  -- use {'neoclide/coc.nvim', branch = 'release'}
   use {'tpope/vim-endwise'}
   use {'tpope/vim-fugitive'}
   use {'tpope/vim-commentary'}
@@ -36,8 +39,8 @@ return require('packer').startup(function()
   use 'wakatime/vim-wakatime'
   use {'janko/vim-test'}
   use {'jgdavey/tslime.vim'}
-  use {'dense-analysis/ale'}
+  -- use {'dense-analysis/ale'}
   use {'sainnhe/gruvbox-material'}
   use {'rhysd/conflict-marker.vim'}
-  use({ "mhanberg/elixir.nvim", requires = { "nvim-lua/plenary.nvim" }})
+  -- use({ "mhanberg/elixir.nvim", requires = { "nvim-lua/plenary.nvim" }})
 end)
