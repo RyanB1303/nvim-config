@@ -8,22 +8,30 @@ return require('packer').startup(function()
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
   use {
+    'RRethy/nvim-treesitter-endwise',
+    wants = 'nvim-treesitter',
+    event = 'InsertEnter'
+  }
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+  use {
     'kyazdani42/nvim-tree.lua',
     requires = { 'kyazdani42/nvim-web-devicons' }
   }
   use {
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' },
-      --plugins
-      -- {'fannheyward/telescope-coc.nvim'}
     }
   }
   use { 'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use { 'jose-elias-alvarez/null-ls.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'romgrk/barbar.nvim' }
   use { 'projekt0n/github-nvim-theme' }
-  use { 'tpope/vim-endwise' }
+  -- use { 'tpope/vim-endwise' }
   use { 'tpope/vim-fugitive' }
   use { 'tpope/vim-commentary' }
   use { 'tpope/vim-surround' }
@@ -33,6 +41,7 @@ return require('packer').startup(function()
   use { 'sheerun/vim-polyglot' }
   use { 'wakatime/vim-wakatime' }
   use { 'janko/vim-test' }
+  use { 'reinh/vim-makegreen' }
   use { 'jgdavey/tslime.vim' }
   use { 'sainnhe/gruvbox-material' }
   use { 'rhysd/conflict-marker.vim' }

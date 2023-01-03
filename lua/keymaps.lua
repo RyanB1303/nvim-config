@@ -8,24 +8,32 @@ local opts = {
 vim.g.mapleader = ','
 -- lsp go in lsp-config
 wk.register({
+  -- telescope
   ["<C-p>"] = { "<cmd>Telescope find_files<cr>", "Find File" },
   ["<leader>b"] = { "<cmd>Telescope buffers<cr>", "Buffer List" },
-  ["<leader>f"] = { "<cmd>LspZeroFormat<cr>", "Format Code" },
   ["<leader>fg"] = { "<cmd>Telescope live_grep<cr>", "Live grep all file" },
+  -- vim fugitive
   ["<leader>g"] = { "<cmd>0G<cr>", "Fugitive New buffer" },
-  ["<leader>l"] = { "<cmd>SymbolsOutline<cr>", "Toggle SymbolsOutline" },
   ["<leader>,"] = { "<cmd>w<cr>", "Save file" },
+  -- run test
+  ["<leader>tt"] = { "<cmd>TestNearest<cr>", "Test Nearest" },
+  ["<leader>T"] = { "<cmd>TestFile<cr>", "Test File" },
+  ["<leader>tl"] = { "<cmd>TestLast<cr>", "Test Last" },
+  -- end
+  -- buffer movements
   ["<a-w>"] = { "<cmd>BufferClose<cr>", "buffer close" },
   ["<a-.>"] = { "<cmd>BufferNext<cr>", "buffer next" },
   ["<a-,>"] = { "<cmd>BufferPrevious<cr>", "buffer previous" },
+  -- move buffer location
   ["<a-<>"] = { "<cmd>BufferMovePrevious<cr>", "buffer move previous alt" },
   ["<a->>"] = { "<cmd>BufferMoveNext<cr>", "buffer move next alt" },
+  -- alternative buffer movements
   ["<s-t>"] = { "<cmd>BufferPrevious<cr>", "buffer previous alt" },
   ["t"] = { "<cmd>BufferNext<cr>", "buffer next alt" },
-  ["<a-b>"] = { "<cmd>BufferPick<cr>", "buffer pick mode" },
-  ["<a-s-w>"] = { "<cmd>BufferCloseAllButCurrentOrPinned<cr>", "buffer close all" },
+  -- end
   ["<c-w>a"] = { "<cmd>wincmd h<cr>", "alt switch right pane" },
   ["<c-w>d"] = { "<cmd>wincmd l<cr>", "alt switch left pane" },
+  -- sidebar toggler
   ["<c-b>b"] = { "<cmd>NvimTreeToggle<cr>", "Toggle navigation" },
   ["<c-b>g"] = { "<cmd>MerginalToggle<cr>", "Toggle merginal" },
 }, opts)
