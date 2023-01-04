@@ -1,8 +1,8 @@
 return require('packer').startup(function()
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  use 'rcarriga/nvim-notify'
-  -- Post-install/update hook with neovim command
+  use { 'wbthomason/packer.nvim' }
+  use { 'rcarriga/nvim-notify' }
+  -- treesitter & plugins
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
@@ -16,6 +16,7 @@ return require('packer').startup(function()
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
+  -- end treesitter
   use {
     'kyazdani42/nvim-tree.lua',
     requires = { 'kyazdani42/nvim-web-devicons' }
@@ -25,24 +26,27 @@ return require('packer').startup(function()
     requires = { { 'nvim-lua/plenary.nvim' },
     }
   }
-  use { 'nvim-lualine/lualine.nvim',
+  use {
+    'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use { 'jose-elias-alvarez/null-ls.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use {
+    'jose-elias-alvarez/null-ls.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
   use { 'romgrk/barbar.nvim' }
-  use { 'projekt0n/github-nvim-theme' }
+  -- use { 'projekt0n/github-nvim-theme' }
   -- use { 'tpope/vim-endwise' }
   use { 'tpope/vim-fugitive' }
   use { 'tpope/vim-commentary' }
-  use { 'tpope/vim-surround' }
-  use { 'tpope/vim-haml' }
+  -- use { 'tpope/vim-haml' }
   use { 'idanarye/vim-merginal' }
   use { 'folke/which-key.nvim' }
-  use { 'sheerun/vim-polyglot' }
+  -- use { 'sheerun/vim-polyglot' }
   use { 'wakatime/vim-wakatime' }
-  use { 'janko/vim-test' }
-  use { 'reinh/vim-makegreen' }
-  use { 'jgdavey/tslime.vim' }
+  -- use { 'janko/vim-test' }
+  -- use { 'reinh/vim-makegreen' }
+  -- use { 'jgdavey/tslime.vim' }
   use { 'sainnhe/gruvbox-material' }
   use { 'rhysd/conflict-marker.vim' }
   use { 'theprimeagen/harpoon' }
@@ -65,6 +69,18 @@ return require('packer').startup(function()
       -- Snippets
       { 'L3MON4D3/LuaSnip' },
       { 'rafamadriz/friendly-snippets' },
+    }
+  }
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      'mortepau/codicons.nvim',
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-neotest/neotest-plenary",
+      "jfpedroza/neotest-elixir",
+      "olimorris/neotest-rspec"
     }
   }
 end)

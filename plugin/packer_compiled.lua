@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codicons.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/codicons.nvim",
+    url = "https://github.com/mortepau/codicons.nvim"
+  },
   ["conflict-marker.vim"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/conflict-marker.vim",
@@ -118,11 +128,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["gruvbox-material"] = {
     loaded = true,
@@ -153,6 +158,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  neotest = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/neotest",
+    url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-elixir"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/neotest-elixir",
+    url = "https://github.com/jfpedroza/neotest-elixir"
+  },
+  ["neotest-plenary"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/neotest-plenary",
+    url = "https://github.com/nvim-neotest/neotest-plenary"
+  },
+  ["neotest-rspec"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/neotest-rspec",
+    url = "https://github.com/olimorris/neotest-rspec"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -218,11 +243,6 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tslime.vim"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/tslime.vim",
-    url = "https://github.com/jgdavey/tslime.vim"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-commentary",
@@ -233,35 +253,10 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-haml"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-haml",
-    url = "https://github.com/tpope/vim-haml"
-  },
-  ["vim-makegreen"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-makegreen",
-    url = "https://github.com/reinh/vim-makegreen"
-  },
   ["vim-merginal"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-merginal",
     url = "https://github.com/idanarye/vim-merginal"
-  },
-  ["vim-polyglot"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-polyglot",
-    url = "https://github.com/sheerun/vim-polyglot"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
-  },
-  ["vim-test"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-test",
-    url = "https://github.com/janko/vim-test"
   },
   ["vim-wakatime"] = {
     loaded = true,
