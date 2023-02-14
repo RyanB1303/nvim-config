@@ -35,18 +35,11 @@ return require('packer').startup(function()
     requires = { 'nvim-lua/plenary.nvim' }
   }
   use { 'romgrk/barbar.nvim' }
-  -- use { 'projekt0n/github-nvim-theme' }
-  -- use { 'tpope/vim-endwise' }
   use { 'tpope/vim-fugitive' }
   use { 'tpope/vim-commentary' }
-  -- use { 'tpope/vim-haml' }
   use { 'idanarye/vim-merginal' }
   use { 'folke/which-key.nvim' }
-  -- use { 'sheerun/vim-polyglot' }
   use { 'wakatime/vim-wakatime' }
-  -- use { 'janko/vim-test' }
-  -- use { 'reinh/vim-makegreen' }
-  -- use { 'jgdavey/tslime.vim' }
   use { 'sainnhe/gruvbox-material' }
   use { 'rhysd/conflict-marker.vim' }
   use { 'theprimeagen/harpoon' }
@@ -83,4 +76,7 @@ return require('packer').startup(function()
       "olimorris/neotest-rspec"
     }
   }
+  use { 'adoyle-h/lsp-toggle.nvim' }
+  use { 'gbrlsnchs/telescope-lsp-handlers.nvim' }
+  use { 'EdenEast/nightfox.nvim' }
 end)

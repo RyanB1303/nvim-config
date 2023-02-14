@@ -1,4 +1,6 @@
 local wk = require("which-key")
+local mark = require("harpoon.mark")
+
 local opts = {
   buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
   silent = true, -- use `silent` when creating keymaps
@@ -10,8 +12,12 @@ vim.g.mapleader = ','
 wk.register({
   -- telescope
   ["<C-p>"] = { "<cmd>Telescope find_files<cr>", "Find File" },
+  ["<space>o"] = { "<cmd>Telescope lsp_document_symbols<cr>", "List Symbols" },
   ["<leader>b"] = { "<cmd>Telescope buffers<cr>", "Buffer List" },
   ["<leader>fg"] = { "<cmd>Telescope live_grep<cr>", "Live grep all file" },
+  ["<leader>ll"] = { "<cmd>Telescope ToggleLSP<cr>", "Toggle LSP" },
+  ["<leader>nl"] = { "<cmd>Telescope ToggleNullLSP<cr>", "Toggle null LSP" },
+  ["<space>h"] = { "<cmd>Telescope harpoon marks<cr>", "harpoon marks" },
   -- vim fugitive
   ["<leader>g"] = { "<cmd>0G<cr>", "Fugitive New buffer" },
   ["<leader>,"] = { "<cmd>w<cr>", "Save file" },
@@ -36,4 +42,6 @@ wk.register({
   -- sidebar toggler
   ["<c-b>b"] = { "<cmd>NvimTreeToggle<cr>", "Toggle navigation" },
   ["<c-b>g"] = { "<cmd>MerginalToggle<cr>", "Toggle merginal" },
+  -- harpoon
+  ["<leader>a"] = { mark.add_file, "Harpoon add file" },
 }, opts)

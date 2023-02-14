@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["lsp-toggle.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/lsp-toggle.nvim",
+    url = "https://github.com/adoyle-h/lsp-toggle.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/neotest-rspec",
     url = "https://github.com/olimorris/neotest-rspec"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -237,6 +247,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope-lsp-handlers.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/telescope-lsp-handlers.nvim",
+    url = "https://github.com/gbrlsnchs/telescope-lsp-handlers.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

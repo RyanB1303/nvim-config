@@ -25,16 +25,46 @@ ntest.setup({
         })
       end
     }),
+  },
+  log_level = vim.log.levels.WARN,
+  status = {
+    virtual_text = true,
+    signs = true
+  },
+  summary = {
+    animated = true,
+    enabled = true,
+    expand_errors = true,
+    follow = true,
+    mappings = {
+      attach = "a",
+      clear_marked = "M",
+      clear_target = "T",
+      debug = "d",
+      debug_marked = "D",
+      expand = { "<CR>", "<2-LeftMouse>" },
+      expand_all = "e",
+      jumpto = "i",
+      mark = "m",
+      next_failed = "J",
+      output = "o",
+      prev_failed = "K",
+      run = "r",
+      run_marked = "R",
+      short = "O",
+      stop = "u",
+      target = "t"
+    },
   }
 })
 -- nearest test
 vim.keymap.set("n", "gtt", function() ntest.run.run() end)
 -- file test
 vim.keymap.set("n", "gtf", function() ntest.run.run(vim.fn.expand("%")) end)
--- open floating 
-vim.keymap.set("n", "gto", function() ntest.output.open({ enter = true, last_run = true}) end)
--- open summary 
-vim.keymap.set("n", "gtp", function() ntest.summary.open() end)
+-- open floating
+vim.keymap.set("n", "gto", function() ntest.output.open({ enter = true, last_run = true }) end)
+-- open summary
+vim.keymap.set("n", "gtp", function() ntest.summary.toggle() end)
 -- jump to failed test
-vim.keymap.set("n", "[n", function() ntest.jump.prev({ status = "failed"}) end)
-vim.keymap.set("n", "]n", function() ntest.jump.next({ status = "failed"}) end)
+vim.keymap.set("n", "[n", function() ntest.jump.prev({ status = "failed" }) end)
+vim.keymap.set("n", "]n", function() ntest.jump.next({ status = "failed" }) end)

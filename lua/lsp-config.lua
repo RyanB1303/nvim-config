@@ -1,8 +1,14 @@
 local lsp = require("lsp-zero")
 local lsp_conf = require("lspconfig")
 
+require('mason.settings').set({
+  ui = {
+    border = 'rounded'
+  }
+})
+
 lsp.set_preferences({
-  suggest_lsp_servers = true,
+  suggest_lsp_servers = false,
   setup_servers_on_start = true,
   set_lsp_keymaps = true,
   configure_diagnostics = true,
@@ -20,7 +26,8 @@ lsp.set_preferences({
 lsp.ensure_installed({
     'sumneko_lua',
     'elixirls',
-    'ruby_ls',
+    'solargraph',
+    'intelephense',
     'tsserver',
     'eslint',
     'rust_analyzer'
@@ -57,6 +64,10 @@ end)
 lsp_conf.elixirls.setup{
     cmd = { "/Users/ry/.config/elixir-ls/language_server.sh" },
     on_attach = on_attach
+}
+
+lsp_conf.intelephense.setup{
+  licenceKey = "00RHJ8DSNYWJNR8"
 }
 
 lsp.nvim_workspace()
