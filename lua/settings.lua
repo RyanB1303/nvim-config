@@ -3,19 +3,24 @@ local set = vim.opt
 -- settings
 set.syntax = 'on'
 set.expandtab = true
-set.shiftwidth = 2
-set.softtabstop = 2
+-- set.shiftwidth = 2
 set.smarttab = true
 set.tabstop = 2
-set.timeoutlen = 100
+set.softtabstop = 2
+set.scrolloff = 20
+set.smartindent = true
+set.cursorline = true
 
-set.wrap = false
+-- set.wrap = false
 set.scrolloff = 5
 set.fileencoding = 'utf-8'
 set.termguicolors = true
+vim.wo.wrap = true
+vim.wo.linebreak = true
+vim.wo.list = false
 
 set.number = true
-set.relativenumber = false
+set.relativenumber = true
 set.cursorline = true
 set.guifont = { "MesloLGS NF", ":h12" }
 -- set.guifont = { "Meslo LG S Regular Nerd Font", ":h12" }
@@ -36,16 +41,12 @@ require('keymaps')
 require('lsp-config')
 require('lualine-config')
 require('neotest-config')
--- require('null-ls-config')
 require('plugins')
 require('telescope-config')
 require('tree-config')
 require('tree-sitter-config')
 require('vim-notify')
-require('lsp-toggle').setup({
-  telescope = true
-})
 --themes
 -- set.background = 'dark'
 -- vim.g.gruvbox_material_better_performance = 1
-vim.cmd [[colorscheme nightfox]]
+vim.cmd [[colorscheme onedark]]

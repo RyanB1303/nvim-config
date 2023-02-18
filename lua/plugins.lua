@@ -30,16 +30,12 @@ return require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use {
-    'jose-elias-alvarez/null-ls.nvim',
-    requires = { 'nvim-lua/plenary.nvim' }
-  }
   use { 'romgrk/barbar.nvim' }
   use { 'tpope/vim-fugitive' }
   use { 'tpope/vim-commentary' }
+  use { 'tpope/vim-rails' }
   use { 'idanarye/vim-merginal' }
   use { 'folke/which-key.nvim' }
-  use { 'wakatime/vim-wakatime' }
   use { 'sainnhe/gruvbox-material' }
   use { 'rhysd/conflict-marker.vim' }
   use { 'theprimeagen/harpoon' }
@@ -76,7 +72,7 @@ return require('packer').startup(function()
       "olimorris/neotest-rspec"
     }
   }
-  use { 'adoyle-h/lsp-toggle.nvim' }
   use { 'gbrlsnchs/telescope-lsp-handlers.nvim' }
   use { 'EdenEast/nightfox.nvim' }
+  use { 'joshdick/onedark.vim' }
 end)

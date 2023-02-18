@@ -15,8 +15,6 @@ wk.register({
   ["<space>o"] = { "<cmd>Telescope lsp_document_symbols<cr>", "List Symbols" },
   ["<leader>b"] = { "<cmd>Telescope buffers<cr>", "Buffer List" },
   ["<leader>fg"] = { "<cmd>Telescope live_grep<cr>", "Live grep all file" },
-  ["<leader>ll"] = { "<cmd>Telescope ToggleLSP<cr>", "Toggle LSP" },
-  ["<leader>nl"] = { "<cmd>Telescope ToggleNullLSP<cr>", "Toggle null LSP" },
   ["<space>h"] = { "<cmd>Telescope harpoon marks<cr>", "harpoon marks" },
   -- vim fugitive
   ["<leader>g"] = { "<cmd>0G<cr>", "Fugitive New buffer" },

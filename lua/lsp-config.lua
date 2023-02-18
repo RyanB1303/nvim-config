@@ -24,12 +24,10 @@ lsp.set_preferences({
 })
 
 lsp.ensure_installed({
-    'sumneko_lua',
     'elixirls',
     'solargraph',
     'intelephense',
     'tsserver',
-    'eslint',
     'rust_analyzer'
 })
 
