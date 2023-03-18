@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/conflict-marker.vim",
     url = "https://github.com/rhysd/conflict-marker.vim"
   },
+  ["dash.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/dash.nvim",
+    url = "/Users/ry/Projects/clone_for_build/dash.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -144,6 +149,11 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lualine-lsp-progress"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
+    url = "https://github.com/arkav/lualine-lsp-progress"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -158,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["mix.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/mix.nvim",
+    url = "https://github.com/brendalf/mix.nvim"
   },
   neotest = {
     loaded = true,
@@ -178,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/neotest-rspec",
     url = "https://github.com/olimorris/neotest-rspec"
+  },
+  ["night-owl.vim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/night-owl.vim",
+    url = "https://github.com/haishanh/night-owl.vim"
   },
   ["nightfox.nvim"] = {
     loaded = true,

@@ -15,6 +15,7 @@ wk.register({
   ["<space>o"] = { "<cmd>Telescope lsp_document_symbols<cr>", "List Symbols" },
   ["<leader>b"] = { "<cmd>Telescope buffers<cr>", "Buffer List" },
   ["<leader>fg"] = { "<cmd>Telescope live_grep<cr>", "Live grep all file" },
+  ["<leader>d"] = { "<cmd>Telescope dash search<cr>", "dash search" },
   ["<space>h"] = { "<cmd>Telescope harpoon marks<cr>", "harpoon marks" },
   -- vim fugitive
   ["<leader>g"] = { "<cmd>0G<cr>", "Fugitive New buffer" },
@@ -42,4 +43,5 @@ wk.register({
   ["<c-b>g"] = { "<cmd>MerginalToggle<cr>", "Toggle merginal" },
   -- harpoon
   ["<leader>a"] = { mark.add_file, "Harpoon add file" },
+  ["<leader>ar"] = { mark.clear_all, "Harpoon reset" }
 }, opts)

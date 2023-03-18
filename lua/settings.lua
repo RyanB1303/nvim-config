@@ -10,14 +10,18 @@ set.softtabstop = 2
 set.scrolloff = 20
 set.smartindent = true
 set.cursorline = true
+-- set.autochdir = true
 
 -- set.wrap = false
 set.scrolloff = 5
 set.fileencoding = 'utf-8'
 set.termguicolors = true
+set.foldenable = false
 vim.wo.wrap = true
 vim.wo.linebreak = true
 vim.wo.list = false
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
 set.number = true
 set.relativenumber = true
@@ -36,6 +40,7 @@ end
 --plugins
 require('barbar-config')
 require('codicon-config')
+require('elixir-mix')
 require('harpoon-config')
 require('keymaps')
 require('lsp-config')
@@ -49,4 +54,4 @@ require('vim-notify')
 --themes
 -- set.background = 'dark'
 -- vim.g.gruvbox_material_better_performance = 1
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme nightfox]]
