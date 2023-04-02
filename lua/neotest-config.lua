@@ -27,6 +27,17 @@ ntest.setup({
     }),
   },
   log_level = vim.log.levels.WARN,
+  output = {
+        enabled = true,
+        open_on_run = "enter"
+  },
+  output_panel = {
+        enabled = true,
+        open = "botright split | resize 25"
+  },
+  quickfix = {
+          enabled = false
+  },
   status = {
     virtual_text = true,
     signs = true
@@ -34,7 +45,7 @@ ntest.setup({
   summary = {
     animated = true,
     enabled = true,
-    expand_errors = true,
+    expand_errors = false,
     follow = true,
     mappings = {
       attach = "a",
@@ -63,6 +74,8 @@ vim.keymap.set("n", "gtt", function() ntest.run.run() end)
 vim.keymap.set("n", "gtf", function() ntest.run.run(vim.fn.expand("%")) end)
 -- open floating
 vim.keymap.set("n", "gto", function() ntest.output.open({ enter = true, last_run = true }) end)
+-- open output panel toggle
+vim.keymap.set("n", "gpo", function() ntest.output_panel.toggle() end)
 -- open summary
 vim.keymap.set("n", "gtp", function() ntest.summary.toggle() end)
 -- jump to failed test

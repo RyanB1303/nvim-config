@@ -78,6 +78,7 @@ return require('packer').startup(function()
         use { 'EdenEast/nightfox.nvim' }
         use { 'joshdick/onedark.vim' }
         use { 'haishanh/night-owl.vim' }
-        use { 'brendalf/mix.nvim', requires = { "nvim-lua/plenary.nvim" } }
-        use 'arkav/lualine-lsp-progress'
+        use { 'arkav/lualine-lsp-progress' }
+        use { 'lukas-reineke/indent-blankline.nvim' }
+        use { 'chaoren/vim-wordmotion' }
 end)

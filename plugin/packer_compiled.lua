@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -168,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["mix.nvim"] = {
-    loaded = true,
-    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/mix.nvim",
-    url = "https://github.com/brendalf/mix.nvim"
   },
   neotest = {
     loaded = true,
@@ -292,6 +292,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-rails",
     url = "https://github.com/tpope/vim-rails"
+  },
+  ["vim-wordmotion"] = {
+    loaded = true,
+    path = "/Users/ry/.local/share/nvim/site/pack/packer/start/vim-wordmotion",
+    url = "https://github.com/chaoren/vim-wordmotion"
   },
   ["which-key.nvim"] = {
     loaded = true,

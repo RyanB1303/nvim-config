@@ -1,5 +1,20 @@
 local set = vim.opt
+local au = require('au')
 
+
+-- idk
+au.BufRead = {
+        '*.ex,*.exs',
+        function()
+                vim.bo.filetype = 'elixir'
+        end
+}
+au.BufRead = {
+        '*.eex,*.heex,*.leex,*.sface,*.lexs',
+        function ()
+                vim.bo.filetype = 'html_eex'
+        end
+}
 -- settings
 set.syntax = 'on'
 set.expandtab = true
@@ -35,12 +50,11 @@ vim.g.python3_host_prog = '/Users/ry/opt/anaconda3/bin/python3'
 --neovide
 
 if vim.g.neovide then
-  require('neovide-config')
+        require('neovide-config')
 end
 --plugins
 require('barbar-config')
 require('codicon-config')
-require('elixir-mix')
 require('harpoon-config')
 require('keymaps')
 require('lsp-config')
@@ -53,5 +67,5 @@ require('tree-sitter-config')
 require('vim-notify')
 --themes
 -- set.background = 'dark'
--- vim.g.gruvbox_material_better_performance = 1
-vim.cmd [[colorscheme nightfox]]
+vim.g.gruvbox_material_better_performance = 1
+vim.cmd [[colorscheme night-owl]]
