@@ -45,7 +45,7 @@ ntest.setup({
   summary = {
     animated = true,
     enabled = true,
-    expand_errors = false,
+    expand_errors = true,
     follow = true,
     mappings = {
       attach = "a",

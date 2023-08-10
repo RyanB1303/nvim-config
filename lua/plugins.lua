@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
         -- Packer can manage itself
         use { 'wbthomason/packer.nvim' }
         use { 'rcarriga/nvim-notify' }
@@ -33,7 +33,6 @@ return require('packer').startup(function()
         use { 'romgrk/barbar.nvim' }
         use { 'tpope/vim-fugitive' }
         use { 'tpope/vim-commentary' }
-        use { 'tpope/vim-rails' }
         use { 'idanarye/vim-merginal' }
         use { 'folke/which-key.nvim' }
         use { 'rhysd/conflict-marker.vim' }
@@ -59,6 +58,7 @@ return require('packer').startup(function()
                         { 'rafamadriz/friendly-snippets' },
                 }
         }
+        use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
         use {
                 "nvim-neotest/neotest",
                 requires = {
@@ -72,13 +72,21 @@ return require('packer').startup(function()
                 }
         }
         use { 'gbrlsnchs/telescope-lsp-handlers.nvim' }
-        use { '~/Projects/clone_for_build/dash.nvim' }
-        -- theme
-        use { 'sainnhe/gruvbox-material' }
-        use { 'EdenEast/nightfox.nvim' }
-        use { 'joshdick/onedark.vim' }
-        use { 'haishanh/night-owl.vim' }
         use { 'arkav/lualine-lsp-progress' }
         use { 'lukas-reineke/indent-blankline.nvim' }
         use { 'chaoren/vim-wordmotion' }
+        use { 'pechorin/any-jump.vim' }
+        use {
+                'xiyaowong/transparent.nvim',
+                config = function()
+                        require("transparent").setup({
+                                extra_groups = {},   -- table: additional groups that should be cleared
+                                exclude_groups = {}, -- table: groups you don't want to clear
+                        })
+                end
+        }
+        --private repo
+        use { '~/Projects/clone_for_build/dash.nvim' }
+        -- theme
+        use { "catppuccin/nvim", as = "catppuccin" }
 end)

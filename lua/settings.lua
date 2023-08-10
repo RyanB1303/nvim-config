@@ -62,10 +62,11 @@ require('lualine-config')
 require('neotest-config')
 require('plugins')
 require('telescope-config')
+-- require('transparent')
 require('tree-config')
 require('tree-sitter-config')
 require('vim-notify')
 --themes
 -- set.background = 'dark'
 vim.g.gruvbox_material_better_performance = 1
-vim.cmd [[colorscheme night-owl]]
+vim.cmd [[colorscheme catppuccin-mocha]]
