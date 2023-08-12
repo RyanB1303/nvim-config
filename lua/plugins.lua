@@ -21,9 +21,6 @@ return require('packer').startup(function()
   use { 'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use {'romgrk/barbar.nvim'}
-  use {'projekt0n/github-nvim-theme'}
-  use {'xiyaowong/nvim-transparent'}
   use {'neoclide/coc.nvim', branch = 'release'}
   use {'tpope/vim-endwise'}
   use {'tpope/vim-fugitive'}

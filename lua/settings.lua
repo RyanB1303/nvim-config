@@ -21,7 +21,6 @@ set.guifont={ "MesloLGS NF", ":h12" }
 require('plugins')
 require('tree-config')
 require('keymaps')
-require('barbar-config')
 require('tree-sitter')
 require('lualine-config')
 --plugins
